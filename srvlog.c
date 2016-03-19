@@ -8,7 +8,6 @@ int srvlog(char *st)
   char ss[48];
   struct timeval tv;
   struct tm *t1;
-//    t=time(NULL);
     time(&t);
     t1=localtime(&t);
         sprintf(ss,"%s/%04d/%02d/%s_%02d.log",LOG_PATH,
@@ -16,13 +15,11 @@ int srvlog(char *st)
  sprintf(buf,"%s",st);
   if ((fd = fopen(ss,"a")) == NULL)
   {
-//        printf("Failas neatsidaro\n");
         //jeigu nera direktorijos
         if (errno != ENOENT) return -1; //testi, jeigu nera direktorijos
         char pat[64];
         int er;
         sprintf(pat,"%s/%04d",LOG_PATH,t1->tm_year+1900);
-//        printf("Kelias = <%s>\n",pat);
         if ((er = mkdir(pat,S_IRWXU|S_IRGRP|S_IXGRP|S_IROTH|S_IXOTH)) == -1)
         {
                 if (errno != EEXIST)
