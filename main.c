@@ -1,5 +1,4 @@
 #include <stdio.h>
-//#include <stdarg.h>
 #include <stdlib.h>
 #include <errno.h>
 #include <netdb.h>
@@ -93,6 +92,7 @@ int port;
   else if (child == 0)  // tai - dukterinio proceso vykdymo kodas
     { 
     close(sockMain);  // dukterinis procesas sockMain daugiau neidomus
+  // Pasirupinu kliento SRC IP adreso nustatymu - kintamasis ipstr
     if (clAddr.ss_family == AF_INET) //INET4
     {
 	struct sockaddr_in *s = (struct sockaddr_in *)&clAddr;
