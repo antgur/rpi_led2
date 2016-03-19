@@ -10,14 +10,14 @@ int siusts(int sockClient, char* ss, int code)
     {
 	sprintf(bu,"Siuntimas neivyko -> %d",sockClient);
 	srvlog(bu);
-	perror("Siuntimas neivyko ");
+//	perror("Siuntimas neivyko ");
 	return -2;
     }
     if (code == -1) 
     {
 	sprintf(bu,"GPIO busy -> %d",sockClient);
 	srvlog(bu);
-	perror("GPIO uzimtas ");
+//	perror("GPIO uzimtas ");
     }
     return 0;
 }
