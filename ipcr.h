@@ -51,3 +51,4 @@ struct GpioData
 
 // KLIENTO klaidu kodai
 // -1: Direktorijos sukurimo LOG failui klaida
+
