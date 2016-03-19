@@ -10,3 +10,4 @@
 #define MAX_MESSAGE_LENGHT 256
 
 int srvlog(char *st);
+//
