@@ -1,0 +1,9 @@
+main.c - pagrindine serverio programa, atrista nuo terminalo.
+Laukia klientu prisijungimo porto numeriu 4441.
+client.c - kliento programa, kurioje idetas kliento aptarnavimo mechanizmas
+srvlog.c - programa, skrta logu rasymui adresu 
+/var/log/METAI/MENUO/pvz_DIENA.log
+Jeigu starto metu direktoriju nera - jos sukuriamos automatiskai.
+ipcr.c - proceduros, skirtos IPC atmintyje esantiems kintamiesiems pasiekti
+
+build - skriptas, paleidziantis kompiliatoriu vykdomos programos sukurimui.

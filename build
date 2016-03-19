@@ -1,0 +1,6 @@
+killall serv
+rm client.o
+gcc -c client.c 2>errcl
+gcc -c srvlog.c 2>errlog
+gcc -c ipcr.c 2>erripc
+gcc -O2 -I. -lpigpio -lrt -lpthread ipcr.o srvlog.o client.o main.c -o serv 2>err
