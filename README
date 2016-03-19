@@ -7,3 +7,8 @@ Jeigu starto metu direktoriju nera - jos sukuriamos automatiskai.
 ipcr.c - proceduros, skirtos IPC atmintyje esantiems kintamiesiems pasiekti
 
 build - skriptas, paleidziantis kompiliatoriu vykdomos programos sukurimui.
+
+Programos veikimas.
+Po starto serveris laukia kliento susijungimo. Jeigu nebaigus darbo su pirmuoju
+klientu jungiasi antrasis - antraji klienta aptarnaujanti programa per IPC 
+kintamaji pakoreguoja LED mirksejimo konstanta.
