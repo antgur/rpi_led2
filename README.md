@@ -4,7 +4,7 @@ main.c - the main server working as system service. It waiting for clients
 	TCP connection on port 4441.
 client.c - client service which is activating when client is connected.
 srvlog.c - log creation part. It writing logs to /var/log/Month/Year/Day.log
-It creates necessary golders if such folder missing at the software start.
+It creates necessary folders if such folder missing at the software start.
 ipc.c - procedure dedicated to access variables located in IPC section
 
 build - script for execution module creation.
